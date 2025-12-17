@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChargeUp</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <canvas id="backgroundCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#home">ChargeUp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav mx-auto nav-pills">
+                    <a class="nav-link" href="#home">HOME</a>
+                    <a class="nav-link" href="#features">FEATURES</a>
+                    <a class="nav-link" href="#how-it-works">HOW IT WORKS</a>
+                    <a class="nav-link" href="#about">ABOUT US</a>
+                </div>
+                <a class="nav-link login-btn" href="#login">LOG IN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container text-center position-relative">
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">
+                    Power Up <span class="text-accent">Anywhere</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Join the peer-to-peer ecosystem connecting EV drivers with private charging hosts.<br>
+                    Secure, reliable, and community-driven.
+                </p>
+                <button class="btn btn-outline-light btn-lg rounded-pill mt-4 hover-lift">Get Started</button>
+            </div>
+            <div class="hero-dots">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in-up">Everything you need a seamless charge</h2>
+            <p class="text-center text-muted mb-5">Explore the features that set us apart.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-in-up hover-lift">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Peer to peer sharing</h5>
+                        <p class="text-muted">Share your charger with the community</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-in-up hover-lift">
+                        <div class="feature-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <h5>Real time charger map</h5>
+                        <p class="text-muted">Find available chargers instantly</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-in-up hover-lift">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h5>Smart booking system</h5>
+                        <p class="text-muted">Reserve your charging slot easily</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-in-up hover-lift">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h5>Secure online payment</h5>
+                        <p class="text-muted">Safe and encrypted transactions</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-in-up hover-lift">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h5>Dual role accounts</h5>
+                        <p class="text-muted">Be a driver and host simultaneously</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-in-up hover-lift">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5>Rating & reviews</h5>
+                        <p class="text-muted">Build trust through community feedback</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-2 fade-in-up">How It Works</h2>
+            <p class="text-center text-muted mb-5">Get started in just 4 simple steps.</p>
+            
+            <div class="steps-container fade-in-up">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h6>Step 01</h6>
+                    <p>Sign Up</p>
+                    <small>Create your account</small>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h6>Step 02</h6>
+                    <p>Find a Host</p>
+                    <small>Browse available chargers</small>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h6>Step 03</h6>
+                    <p>Book & Charge</p>
+                    <small>Reserve your slot</small>
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h6>Step 04</h6>
+                    <p>Pay</p>
+                    <small>Secure payment</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="benefit-card fade-in-up">
+                        <div class="benefit-badge">For Drivers</div>
+                        <h4>Eliminate Range Anxiety</h4>
+                        <ul class="benefit-list">
+                            <li>Access private charging across the country</li>
+                            <li>Transparent pricing without surcharges</li>
+                            <li>Transparent range</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="benefit-card fade-in-up">
+                        <div class="benefit-badge">For Hosts</div>
+                        <h4>Monetize Your Charger</h4>
+                        <ul class="benefit-list">
+                            <li>Earn passive income from your charger</li>
+                            <li>Help your community</li>
+                            <li>Contribute to the EV ecosystem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="about" class="team-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in-up">Our Team</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="team-card fade-in-up hover-lift">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Team Member">
+                        </div>
+                        <h5>Name</h5>
+                        <p class="text-muted">Role</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card fade-in-up hover-lift">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Team Member">
+                        </div>
+                        <h5>Name</h5>
+                        <p class="text-muted">Role</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card fade-in-up hover-lift">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Team Member">
+                        </div>
+                        <h5>Name</h5>
+                        <p class="text-muted">Role</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card fade-in-up hover-lift">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Team Member">
+                        </div>
+                        <h5>Name</h5>
+                        <p class="text-muted">Role</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card fade-in-up hover-lift">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Team Member">
+                        </div>
+                        <h5>Name</h5>
+                        <p class="text-muted">Role</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card fade-in-up hover-lift">
+                        <div class="team-photo">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Team Member">
+                        </div>
+                        <h5>Name</h5>
+                        <p class="text-muted">Role</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5 class="mb-3">ChargeUp</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <a href="#" class="social-icon me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="text-center text-muted small mb-0">&copy; 2025 ChargeUp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
